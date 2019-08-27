@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/lay_toolbar"/>
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_below="@id/lay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="5dp"
+        android:background="@null"
+        android:textSize="35dp"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:hint="Create New Task"
+        android:textColorHint="#0498F3"/>
+
+   <RelativeLayout
+       android:id="@+id/lay_body"
+       android:layout_above="@id/clickButton"
+       android:layout_below="@id/title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+       <EditText
+           android:id="@+id/text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@null"
+           android:textSize="35dp"
+           android:hint="@string/body"
+           android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+           android:paddingLeft="5dp"
+           />
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_above="@id/clickButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/txt_date_set"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/img_datepick"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:src="@drawable/calender" />
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/clickButton"
+        android:text="save"
+        android:textSize="25dp"
+        android:background="@drawable/rectangle"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

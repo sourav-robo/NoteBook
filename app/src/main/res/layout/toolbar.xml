@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_choose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_headder"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="17sp"
+            android:text="Sourav"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="8">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/images"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="title"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/list_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="text"/>
+            <TextView
+                android:id="@+id/list_date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:padding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="date"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    
+</LinearLayout>
